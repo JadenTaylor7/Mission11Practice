@@ -21,47 +21,21 @@ function ProjectList() {
             <h1>Water Projects</h1>
             {
                 projects.map((i) => (
-                    <div id="projectCard">
-                        <h3>{i.projectName}</h3>
-                        <ul>
-                            <li>Project Type: {i.projectType}</li>
-                            <li>Regional Program: {i.projectRegionalProgram}</li>
-                            <li>Impact: {i.projectImpact} peeps served</li>
-                            <li>Project Phase: {i.projectPhase}</li>
-                            <li>Project Status: {i.projectFunctionalityStatus}</li>
-                        </ul>
+                    <div id="projectCard" className="card">
+                        <h3 className="card-title">{i.projectName}</h3>
+                        <div className="card-body">
+                            <ul className="list-unstyled">
+                                <li><strong>Project Type:</strong> {i.projectType}</li>
+                                <li><strong>Regional Program:</strong> {i.projectRegionalProgram}</li>
+                                <li><strong>Impact:</strong> {i.projectImpact} peeps served</li>
+                                <li><strong>Project Phase:</strong> {i.projectPhase}</li>
+                                <li><strong>Project Status:</strong> {i.projectFunctionalityStatus}</li>
+                            </ul>
+                        </div>
+        
                     </div>
                 ))
             }
-            {/* <table>
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Type</th>
-                        <th>Regional Program</th>
-                        <th>Impact</th>
-                        <th>Phase</th>
-                        <th>Functionality Status</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {
-                        projects.map((f) => (
-                            <tr key={f.projectId}>
-                                <td>{f.projectName}</td>
-                                <td>{f.projectType}</td>
-                                <td>{f.projectRegionalProgram}</td>
-                                <td>{f.projectImpact}</td>
-                                <td>{f.projectPhase}</td>
-                                <td>{f.projectFunctionalityStatus}</td>
-                                projectId: number;
-    
-                            </tr>
-                        ))
-                    }
-               
-                </tbody>
-            </table> */}
         </>
     );
 }
