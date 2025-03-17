@@ -2,16 +2,17 @@ import { useEffect, useState } from "react";
 import {project} from "./types/project"
 function ProjectList() {
     const [projects, setProjects] = useState<project[]>([]);
+    const [pageSize, setPageSize] = useState<number>(5);
     useEffect(() => {
         const fetchProject = async() => {
-            const response = await fetch("https://localhost:5000/api/water/allprojects");
+            const response = await fetch(`https://localhost:5000/api/water/allprojects?pageSize=${pageSize}`);
             const data = await response.json();
             setProjects(data);
         };
 
 
         fetchProject();
-    }, []); //try, if don't work pass in empty array.
+    }, [pageSize]); //try, if don't work pass in empty array.
 
 
 
@@ -36,6 +37,15 @@ function ProjectList() {
                     </div>
                 ))
             }
+            <br/>
+            <label>
+                Results per page:
+                <select value={pageSize} onChange={(x) => setPageSize(Number(x.target.value))}>
+                    <option value={5}>5</option>
+                    <option value={10}>10</option>
+                    <option value={20}>20</option>
+                </select>
+            </label>
         </>
     );
 }
