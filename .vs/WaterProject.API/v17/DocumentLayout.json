@@ -1,0 +1,87 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\jtjad\\School\\IS 413 Eneterprise Level Development\\Mission11Practice\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8103A2A9-3801-480E-B22E-2EC7DC7CA6EB}|backend\\WaterProject.API\\WaterProject.API.csproj|c:\\users\\jtjad\\school\\is 413 eneterprise level development\\mission11practice\\backend\\waterproject.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8103A2A9-3801-480E-B22E-2EC7DC7CA6EB}|backend\\WaterProject.API\\WaterProject.API.csproj|solutionrelative:backend\\waterproject.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8103A2A9-3801-480E-B22E-2EC7DC7CA6EB}|backend\\WaterProject.API\\WaterProject.API.csproj|c:\\users\\jtjad\\school\\is 413 eneterprise level development\\mission11practice\\backend\\waterproject.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8103A2A9-3801-480E-B22E-2EC7DC7CA6EB}|backend\\WaterProject.API\\WaterProject.API.csproj|solutionrelative:backend\\waterproject.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8103A2A9-3801-480E-B22E-2EC7DC7CA6EB}|backend\\WaterProject.API\\WaterProject.API.csproj|c:\\users\\jtjad\\school\\is 413 eneterprise level development\\mission11practice\\backend\\waterproject.api\\controllers\\watercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8103A2A9-3801-480E-B22E-2EC7DC7CA6EB}|backend\\WaterProject.API\\WaterProject.API.csproj|solutionrelative:backend\\waterproject.api\\controllers\\watercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8103A2A9-3801-480E-B22E-2EC7DC7CA6EB}|backend\\WaterProject.API\\WaterProject.API.csproj|c:\\users\\jtjad\\school\\is 413 eneterprise level development\\mission11practice\\backend\\waterproject.api\\data\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8103A2A9-3801-480E-B22E-2EC7DC7CA6EB}|backend\\WaterProject.API\\WaterProject.API.csproj|solutionrelative:backend\\waterproject.api\\data\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\jtjad\\School\\IS 413 Eneterprise Level Development\\Mission11Practice\\backend\\WaterProject.API\\Program.cs",
+              "RelativeDocumentMoniker": "backend\\WaterProject.API\\Program.cs",
+              "ToolTip": "C:\\Users\\jtjad\\School\\IS 413 Eneterprise Level Development\\Mission11Practice\\backend\\WaterProject.API\\Program.cs",
+              "RelativeToolTip": "backend\\WaterProject.API\\Program.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABEAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T20:20:12.916Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "WaterController.cs",
+              "DocumentMoniker": "C:\\Users\\jtjad\\School\\IS 413 Eneterprise Level Development\\Mission11Practice\\backend\\WaterProject.API\\Controllers\\WaterController.cs",
+              "RelativeDocumentMoniker": "backend\\WaterProject.API\\Controllers\\WaterController.cs",
+              "ToolTip": "C:\\Users\\jtjad\\School\\IS 413 Eneterprise Level Development\\Mission11Practice\\backend\\WaterProject.API\\Controllers\\WaterController.cs",
+              "RelativeToolTip": "backend\\WaterProject.API\\Controllers\\WaterController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T20:01:16.91Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\jtjad\\School\\IS 413 Eneterprise Level Development\\Mission11Practice\\backend\\WaterProject.API\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "backend\\WaterProject.API\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\jtjad\\School\\IS 413 Eneterprise Level Development\\Mission11Practice\\backend\\WaterProject.API\\Properties\\launchSettings.json",
+              "RelativeToolTip": "backend\\WaterProject.API\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAcAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-17T22:14:05.585Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Project.cs",
+              "DocumentMoniker": "C:\\Users\\jtjad\\School\\IS 413 Eneterprise Level Development\\Mission11Practice\\backend\\WaterProject.API\\Data\\Project.cs",
+              "RelativeDocumentMoniker": "backend\\WaterProject.API\\Data\\Project.cs",
+              "ToolTip": "C:\\Users\\jtjad\\School\\IS 413 Eneterprise Level Development\\Mission11Practice\\backend\\WaterProject.API\\Data\\Project.cs",
+              "RelativeToolTip": "backend\\WaterProject.API\\Data\\Project.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-17T21:00:17.143Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
