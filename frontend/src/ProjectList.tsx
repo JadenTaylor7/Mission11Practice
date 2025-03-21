@@ -52,7 +52,7 @@ function ProjectList() {
             {/* dynamically create number of pages needed */}
             {
                 [...Array(totalPages)].map((_, i) => (
-                    <button key={i + 1} onClick={() => setPageNumber(i + 1)}>
+                    <button key={i + 1} onClick={() => setPageNumber(i + 1)} disabled={pageNumber === (i + 1)}>
                         {i + 1}
                     </button>
                 ))
@@ -63,7 +63,10 @@ function ProjectList() {
             <br/>
             <label>
                 Results per page:
-                <select value={pageSize} onChange={(i) => setPageSize(Number(i.target.value))}>
+                <select value={pageSize} onChange={(i) => {
+                    setPageSize(Number(i.target.value));
+                    setPageNumber(1);
+                    }}>
                     <option value={5}>5</option>
                     <option value={10}>10</option>
                     <option value={20}>20</option>
