@@ -15,12 +15,30 @@ namespace WaterProject.API.Controllers
         }
 
         [HttpGet("AllProjects")]
-        public IEnumerable<Project> GetProjects(int pageSize)
+        public IActionResult GetProjects(int pageSize, int pageNumber)
         {
+            //string? favProjType = Request.Cookies["FavoriteProjectType"];
+            //Console.WriteLine("-------COOKIE-------\n" + favProjType);
+
+            //HttpContent.Response.Cookies.Append('FavoriteProjectType', "Borehole Well and Hand Pump", new CookieOptions
+            //{
+            //    HttpOnly = true,
+            //    Secure = true,
+            //    SameSite = SameSiteMode.Strict,
+            //    Expires = DateTime.Now.AddMinutes(1),
+            //});
+
             var projectList = _waterContext.Projects
-            .Skip(5)
-            .Take(pageSize).ToList();
-            return projectList;
+                .Skip((pageNumber - 1) * pageSize)
+                .Take(pageSize).ToList();
+
+            var totalNumberProjects = _waterContext.Projects.Count();
+            
+            return Ok(new
+            {
+                projectList,
+                totalNumberProjects
+            });
         }
 
 
