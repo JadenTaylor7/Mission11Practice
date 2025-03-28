@@ -27,7 +27,6 @@ function ProjectList() {
 
     return (
         <>
-            <h1>Water Projects</h1>
             {
                 projects?.map((i) => (
                     <div id="projectCard" className="card" key={i.projectId}>

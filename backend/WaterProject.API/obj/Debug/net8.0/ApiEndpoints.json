@@ -61,6 +61,16 @@
     ]
   },
   {
+    "ContainingType": "WaterProject.API.Controllers.WaterController",
+    "Method": "GetProjectTypes",
+    "RelativePath": "api/Water/GetProjectTypes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "WaterProject.API.Controllers.WeatherForecastController",
     "Method": "Get",
     "RelativePath": "WeatherForecast",

@@ -111,6 +111,18 @@
         }
       }
     },
+    "/api/Water/GetProjectTypes": {
+      "get": {
+        "tags": [
+          "Water"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/WeatherForecast": {
       "get": {
         "tags": [

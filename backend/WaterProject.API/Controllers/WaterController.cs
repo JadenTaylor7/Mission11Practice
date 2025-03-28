@@ -59,5 +59,16 @@ namespace WaterProject.API.Controllers
             return projectList;
         }
 
+
+        [HttpGet("GetProjectTypes")]
+        public IActionResult GetProjectTypes () 
+        {
+            var projectTypes = _waterContext.Projects
+                .Select(p => p.ProjectType)
+                .Distinct()
+                .ToList();
+
+            return Ok(projectTypes);
+        }
     }
 }
