@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import {project} from "./types/project"
-function ProjectList() {
+function ProjectList({selectedCategories} : {selectedCategories: string[]}) {
     const [projects, setProjects] = useState<project[]>([]);
     const [pageSize, setPageSize] = useState<number>(5);
     const [pageNumber, setPageNumber] = useState<number>(1);
@@ -11,7 +11,10 @@ function ProjectList() {
             // const response = await fetch(`https://localhost:5000/api/water/allprojects?pageSize=${pageSize}&pageNumber=${pageNumber}`, {
             //     credentials: 'include',
             // });
-            const response = await fetch(`https://localhost:5000/api/water/allprojects?pageSize=${pageSize}&pageNumber=${pageNumber}`);
+            const categoryParams = selectedCategories.map((cat) => `projectTypes=${encodeURIComponent(cat)}`).join('&');
+
+
+            const response = await fetch(`https://localhost:5000/api/water/allprojects?pageSize=${pageSize}&pageNumber=${pageNumber}${selectedCategories.length ? `&${categoryParams}` : ''}`);
             const data = await response.json();
             setProjects(data.projectList); //this has to be a lowercase p to match what gets returned
             setTotalItems(data.totalNumberProjects);
@@ -20,7 +23,7 @@ function ProjectList() {
 
 
         fetchProject();
-    }, [pageSize, pageNumber, totalItems]); //try, if don't work pass in empty array.
+    }, [pageSize, pageNumber, totalItems, selectedCategories]); //try, if don't work pass in empty array.
 
 
 

@@ -15,7 +15,7 @@ namespace WaterProject.API.Controllers
         }
 
         [HttpGet("AllProjects")]
-        public IActionResult GetProjects(int pageSize, int pageNumber)
+        public IActionResult GetProjects(int pageSize, int pageNumber, [FromQuery] List<string>? projectTypes = null)
         {
             //string? favProjType = Request.Cookies["FavoriteProjectType"];
             //Console.WriteLine("-------COOKIE-------\n" + favProjType);
@@ -28,11 +28,20 @@ namespace WaterProject.API.Controllers
             //    Expires = DateTime.Now.AddMinutes(1),
             //});
 
-            var projectList = _waterContext.Projects
+            var query = _waterContext.Projects.AsQueryable();
+
+            if (projectTypes != null && projectTypes.Any())
+            {
+                query = query.Where(p => projectTypes.Contains(p.ProjectType));
+            }
+
+            var totalNumberProjects = query.Count();
+
+            var projectList = query
                 .Skip((pageNumber - 1) * pageSize)
                 .Take(pageSize).ToList();
 
-            var totalNumberProjects = _waterContext.Projects.Count();
+
             
             return Ok(new
             {
